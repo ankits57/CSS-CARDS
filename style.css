@@ -1,0 +1,150 @@
+.main{
+    margin-top: 20%;
+    width: fit-content;
+}
+@keyframes rotate {
+    0%{   
+        translate : 0;
+    }50%{
+        translate: 0px -200px;
+    }100%{
+        transform: rotateY(0deg);
+        transform: rotateY(180deg); 
+    }
+}
+.card1-front{
+    width: 400px;
+    height: 250px;
+    box-shadow: 2px 4px 4px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+    &:hover{
+        animation: rotate 2s ease forwards;
+    }
+}
+
+.card2-front{
+    width: 400px;
+    height: 250px;
+    box-shadow: 2px 4px 4px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+    &:hover{
+        animation: rotate 1s ease forwards;
+    }
+}
+.card2-back{
+    transform: rotateY(-180deg);
+}
+.card3-front{
+    width: 400px;
+    height: 250px;
+    box-shadow: 2px 4px 4px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    background: linear-gradient(90deg, #0700b8 0%, #00ff88 100%);
+    &:hover{
+        animation: rotate 1s ease forwards;
+    }
+}
+
+.card4-front{
+    width: 400px;
+    height: 250px;
+    box-shadow: 2px 4px 4px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+    &:hover{
+        animation: rotate 1s ease forwards;
+    }
+}
+
+
+
+li{
+    list-style: none;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.company{
+    color: white;
+    padding-top: 15px;
+    padding-left: 14px;
+    position: absolute;
+}
+
+.bank{
+    color: white;
+    padding-top: 15px;
+    padding-left: 248px;
+    position: absolute;
+}
+
+.chip{
+    height: 80px;
+    width: 160px;
+    position: absolute;
+    margin-top: 60px;
+    margin-left: -35px;
+}
+
+.fa-wifi{
+    color: white;
+    rotate: 90deg;
+    position: absolute;
+    margin-top: 83px;
+    margin-left: 310px;
+}
+
+.number{
+    color: white;
+    padding-top: 150px;
+    padding-left: 20px;
+    letter-spacing: 8px;
+    position: absolute;
+    
+}
+
+.valid{
+    color: white;
+    font-size: 12px;
+    padding-left: 20px;
+    padding-top: 180px;
+    letter-spacing: 2px;
+    font-weight: 100;
+    position: absolute;
+}
+
+.date{
+    font-size: 14px;
+    font-weight: 600;
+    position: absolute;
+}
+
+.name{
+    color: white;
+    position: absolute;
+    padding-top: 200px;
+    padding-left: 20px;
+    letter-spacing: 4px;
+}
+
+.fa-cc-visa{
+    color: white;
+    position: absolute;
+    margin-top: 210px;
+    margin-left: 335px;
+}
+
+.fa-cc-mastercard{
+    color: white;
+    position: absolute;
+    margin-top: 210px;
+    margin-left: 335px;
+}
